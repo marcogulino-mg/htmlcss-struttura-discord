@@ -6,6 +6,7 @@
 
 #header-01 {
   min-height: 80px;
+  /* Attribute as flex container */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +15,7 @@
 }
 
 #header-container {
-  /* Attribute as flex items */
+  /* Attribute as flex item */
   flex-basis: 60%;
   /* Attribute as flex container */
   display: flex;
@@ -35,7 +36,7 @@
 #header-menu {
   /* Attribute as flex container */
   display: flex;
-  /* Attribute as flex items */
+  /* Attribute as flex item */
   flex-basis: 69%;
   align-self: center;
   /* DEBUG */
@@ -52,10 +53,11 @@
 }
 
 #login-button {
+  text-align: end;
+  /* Attribute as flex item */
   flex-basis: 20%;
   flex-shrink: 0;
   align-self: center;
-  text-align: end;
   /* DEBUG */
   border: 1px solid black;
 }
@@ -65,6 +67,7 @@
 /* Hero Section */
 #hero-section {
   min-height: 500px;
+  /* Attribute as flex container */
   display: flex;
   justify-content: center;
   /* DEBUG */
@@ -73,6 +76,7 @@
 
 #hero-photo {
   margin: 45px 0;
+  /* Attribute as flex item */
   flex-basis: 50%;
   /* DEBUG */
   background-color: #ef82ed;
@@ -82,6 +86,7 @@
 .section {
   min-height: 600px;
   padding: 40px 100px;
+  /* Attribute as flex container */
   display: flex;
   justify-content: center;
   /* DEBUG */
@@ -91,6 +96,7 @@
 .big-section {
   min-height: 1200px;
   padding: 40px 100px;
+  /* Attribute as flex container */
   display: flex;
   justify-content: center;
   /* DEBUG */
@@ -99,20 +105,82 @@
 
 /* Subsection */
 .sub-section-type1 {
+  /* Attribute as flex item */
   flex-basis: 43%;
 }
 
 .sub-section-type2 {
+  /* Attribute as flex item */
   flex-basis: 28%;
 }
 
 .sub-section-type3 {
+  /* Attribute as flex item */
   flex-basis: 71%;
   /* DEBUG */
   background-color: #218b21;
 }
-
 /* MAIN */
+
+/* FOOTER */
+footer {
+  height: 680px;
+  /* Attribute as flex container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* DEBUG */
+  background-color: #23272a;
+}
+
+#menu-footer {
+  width: 62%;
+  margin-top: 20px;
+  /* Attribute as flex container */
+  display: flex;
+  /* Attribute as flex item */
+  flex-basis: 74%;
+  /* DEBUG */
+  border: 1px solid black;
+}
+
+.sub-section-type4 {
+  /* Attribute as flex item */
+  flex-basis: 36%;
+  /* DEBUG */
+  background-color: #f08180;
+}
+
+.sub-section-type5 {
+  /* Attribute as flex item */
+  flex-basis: 16%;
+  /* DEBUG */
+  border-left: 1px solid black;
+  background-color: #20b3aa;
+}
+
+#footer-section2 {
+  margin-bottom: 15px;
+  height: 50px;
+  width: 62%;
+  /* Attribute as flex container */
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /* DEBUG */
+  background-color: #7fffd4;
+}
+
+#footer-section2 > span {
+  /* Attribute as flex item */
+  align-self: center;
+  padding: 4px;
+  /* DEBUG */
+  background-color: #fcb7bf;
+}
+
+/* FOOTER */
 
 /* Decorative Classes for Sections*/
 .pink {
