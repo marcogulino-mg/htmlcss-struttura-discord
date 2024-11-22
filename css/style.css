@@ -25,11 +25,11 @@
 }
 
 #logo {
-    flex-basis: 11%;
-    flex-shrink: 0;
-    align-self: center;
-    /* DEBUG */
-    border: 1px solid black;
+  flex-basis: 11%;
+  flex-shrink: 0;
+  align-self: center;
+  /* DEBUG */
+  border: 1px solid black;
 }
 
 #header-menu {
@@ -52,10 +52,81 @@
 }
 
 #login-button {
-    flex-basis: 20%;
-    flex-shrink: 0;
-    align-self: center;
-    text-align: end;
-    /* DEBUG */
-    border: 1px solid black;
+  flex-basis: 20%;
+  flex-shrink: 0;
+  align-self: center;
+  text-align: end;
+  /* DEBUG */
+  border: 1px solid black;
+}
+
+/* MAIN */
+
+/* Hero Section */
+#hero-section {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  /* DEBUG */
+  background-color: #00018b;
+}
+
+#hero-photo {
+  margin: 45px 0;
+  flex-basis: 50%;
+  /* DEBUG */
+  background-color: #ef82ed;
+}
+
+/* Sections */
+.section {
+  min-height: 600px;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: center;
+  /* DEBUG */
+  border: 1px, solid, black;
+}
+
+.big-section {
+  min-height: 1200px;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: center;
+  /* DEBUG */
+  border: 1px, solid, black;
+}
+
+/* Subsection */
+.sub-section-type1 {
+  flex-basis: 43%;
+}
+
+.sub-section-type2 {
+  flex-basis: 28%;
+}
+
+.sub-section-type3 {
+  flex-basis: 71%;
+  /* DEBUG */
+  background-color: #218b21;
+}
+
+/* MAIN */
+
+/* Decorative Classes for Sections*/
+.pink {
+  background-color: #ffc0ca;
+}
+
+.blue {
+  background-color: #1e90ff;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.grey {
+  background-color: #d3d3d3;
 }
