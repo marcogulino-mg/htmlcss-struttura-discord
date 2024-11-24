@@ -3,19 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
   </head>
   <body>
     <!-- Header -->
-    <header id="header-01">
-      <!-- Header container -->
-      <div id="header-container">
+    <header>
+      <!-- Container Header -->
+      <div class="container-header container-standard-width">
         <!-- Logo -->
-        <img src="./img/logo.svg" alt="logo discord" id="logo" />
-
-        <!-- Menu -->
-        <nav id="header-menu">
+        <div class="logo"><span>Logo</span></div>
+        <!-- Menu Header -->
+        <nav class="menu-header">
           <ul>
             <li><a href="#">link</a></li>
             <li><a href="#">link</a></li>
@@ -24,56 +23,52 @@
             <li><a href="#">link</a></li>
           </ul>
         </nav>
-
-        <!-- Login Button -->
-        <span id="login-button">login</span>
+        <!-- Button -->
+        <div class="button">
+          <button class="stylish-button">Login</button>
+        </div>
       </div>
     </header>
+    <!-- /HEADER -->
 
-    <!-- Main -->
+    <!-- MAIN -->
     <main>
-      <!-- Hero section -->
-      <div id="hero-section">
-        <div id="hero-photo"></div>
+      <div class="section-s-container">
+        <div class="container-s"></div>
       </div>
-
-      <!-- Sections -->
-      <div class="section white">
-        <div class="sub-section-type1 blue"></div>
-        <div class="sub-section-type2 pink"></div>
+      <div class="section-standard-container">
+        <div class="subcontainer-standard"></div>
+        <div class="subcontainer-m"></div>
       </div>
-
-      <div class="section grey">
-        <div class="sub-section-type2 pink"></div>
-        <div class="sub-section-type1 blue"></div>
+      <div class="section-standard-container grey">
+        <div class="subcontainer-m"></div>
+        <div class="subcontainer-standard"></div>
       </div>
-
-      <div class="section white">
-        <div class="sub-section-type1 blue"></div>
-        <div class="sub-section-type2 pink"></div>
+      <div class="section-standard-container">
+        <div class="subcontainer-standard"></div>
+        <div class="subcontainer-m"></div>
       </div>
-
-      <div class="big-section grey">
-        <div class="sub-section-type3"></div>
+      <div class="section-xl-container grey">
+        <div class="container-xl container-standard-width"></div>
       </div>
     </main>
+    <!-- /MAIN -->
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
-      <!-- Menu footer -->
-      <nav id="menu-footer">
-          <div class="sub-section-type4"></div>
-          <div class="sub-section-type5"></div>
-          <div class="sub-section-type5"></div>
-          <div class="sub-section-type5"></div>
-          <div class="sub-section-type5"></div>
-      </nav>
-
-      <!-- Footer second part -->
-      <div id="footer-section2">
-        <img src="./img/logo.svg" alt="logo discord" id="logo" />
-        <span>Bottone</span>
+      <div class="container-footer container-xl-height container-footer-width">
+        <div class="subcontainer-s"></div>
+        <div class="subcontainer-xs"></div>
+        <div class="subcontainer-xs"></div>
+        <div class="subcontainer-xs"></div>
+        <div class="subcontainer-xs"></div>
+      </div>
+      <hr />
+      <div class="container-mini-footer container-footer-width">
+        <span class="pink">Logo</span>
+        <button class="pink">Bottone</button>
       </div>
     </footer>
+    <!-- /FOOTER -->
   </body>
 </html>
