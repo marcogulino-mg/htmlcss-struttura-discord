@@ -3,72 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Discord</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Header -->
+    <!-- HEADER -->
     <header>
-      <!-- Container Header -->
-      <div class="container-header container-standard-width">
-        <!-- Logo -->
-        <div class="logo"><span>Logo</span></div>
-        <!-- Menu Header -->
-        <nav class="menu-header">
+      <nav id="top-bar">
+        <div class="logo border-debug">Logo</div>
+        <div class="menu-header border-debug">
           <ul>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
+            <li>items</li>
+            <li>items</li>
+            <li>items</li>
+            <li>items</li>
+            <li>items</li>
           </ul>
-        </nav>
-        <!-- Button -->
-        <div class="button">
-          <button class="stylish-button">Login</button>
         </div>
-      </div>
+        <div class="button border-debug">
+            <button>Login</button>
+        </div>
+      </nav>
     </header>
-    <!-- /HEADER -->
+
+    <!-- JUMBOTRON -->
+    <div id="jumbotron">
+        <div class="container-jumbo border-debug"></div>
+    </div>
 
     <!-- MAIN -->
-    <main>
-      <div class="section-s-container">
-        <div class="container-s"></div>
-      </div>
-      <div class="section-standard-container">
-        <div class="subcontainer-standard"></div>
-        <div class="subcontainer-m"></div>
-      </div>
-      <div class="section-standard-container grey">
-        <div class="subcontainer-m"></div>
-        <div class="subcontainer-standard"></div>
-      </div>
-      <div class="section-standard-container">
-        <div class="subcontainer-standard"></div>
-        <div class="subcontainer-m"></div>
-      </div>
-      <div class="section-xl-container grey">
-        <div class="container-xl container-standard-width"></div>
-      </div>
-    </main>
-    <!-- /MAIN -->
+     <main>
+        <section>
+            <div class="container-section">
+                <div class="sub-container-L border-debug"></div>
+                <div class="sub-container-M border-debug"></div>
+            </div>
+        </section>
+        <section class="grey">
+            <div class="container-section">
+                <div class="sub-container-M border-debug"></div>
+                <div class="sub-container-L border-debug"></div>
+            </div>
+        </section>
+        <section>
+            <div class="container-section">
+                <div class="sub-container-L border-debug"></div>
+                <div class="sub-container-M border-debug"></div>
+            </div>
+        </section>
+        <section class="grey">
+            <div class="container-section">
+                <div class="container-section-XXL border-debug"></div>
+            </div>
+        </section>
+     </main>
 
     <!-- FOOTER -->
     <footer>
-      <div class="container-footer container-xl-height container-footer-width">
-        <div class="subcontainer-s"></div>
-        <div class="subcontainer-xs"></div>
-        <div class="subcontainer-xs"></div>
-        <div class="subcontainer-xs"></div>
-        <div class="subcontainer-xs"></div>
-      </div>
-      <hr />
-      <div class="container-mini-footer container-footer-width">
-        <span class="pink">Logo</span>
-        <button class="pink">Bottone</button>
-      </div>
+        <section class="top-footer">
+            <div class="container-footer-S border-debug"></div>
+            <div class="container-footer-XS border-debug"></div>
+            <div class="container-footer-XS border-debug"></div>
+            <div class="container-footer-XS border-debug"></div>
+            <div class="container-footer-XS border-debug"></div>
+        </section>
+        <hr>
+        <section class="bottom-footer">
+            <div class="logo-footer debug">Logo</div>
+            <div class="button-footer debug">
+                <button>Button</button>
+            </div>
+        </section>
     </footer>
-    <!-- /FOOTER -->
   </body>
 </html>

@@ -2,13 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
 }
 
 /* HEADER */
 header {
-  height: 100px;
+  min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,185 +14,186 @@ header {
   background-color: #add8e7;
 }
 
-.container-header {
-  height: 40px;
+#top-bar {
+  margin: 0 auto;
+  height: 60px;
+  flex-basis: 75%;
   display: flex;
-  /* DEBUG */
-  background-color: #daa51e;
-}
-
-.logo {
-  display: flex;
-  flex-basis: 20%;
+  justify-content: space-between;
   align-items: center;
   /* DEBUG */
-  border: 1px solid #000000;
+  background-color: #daa51c;
 }
 
-.logo > span {
-  padding-left: 15px;
+/* LOGO */
+.logo{
+  padding: 10px;
+  flex-basis: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
+/* MENU */
 .menu-header {
+  height: 100%;
+  padding: 10px;
   flex-basis: 60%;
-  /* DEBUG */
-  border: 1px solid #000000;
 }
 
 .menu-header > ul {
+  list-style: none;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 5%;
 }
 
+/* LOGIN BUTTON */
 .button {
+  height: 100%;
+  padding: 10px;
   flex-basis: 20%;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  /* DEBUG */
-  border: 1px solid #000000;
+  justify-content: flex-end;
 }
 
-.button > .stylish-button {
-  margin-right: 15px;
-}
-/* HEADER */
-
-/* MAIN */
-.section-s-container {
-  height: 500px;
+/* JUMBOTRON */
+#jumbotron {
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   /* DEBUG */
+  height: 600px;
   background-color: #00018b;
 }
 
-.container-s {
-  height: 400px;
+.container-jumbo {
+  height: 100%;
   flex-basis: 50%;
   /* DEBUG */
   background-color: #ef82ed;
 }
 
-.section-standard-container {
-  height: 650px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-xl-container {
-  height: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-xl {
-  height: 1150px;
-  /* DEBUG */
-  background-color: #218b21;
-  border: 1px solid #000000;
-}
 /* MAIN */
+main > section {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* DEBUG */
+  height: 700px;
+}
+
+main > section:last-child {
+  /* DEBUG */
+  height: 1000px;
+}
 
 /* FOOTER */
 footer {
-  height: 1000px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 35px;
   /* DEBUG */
   background-color: #23272a;
 }
 
-.container-footer {
-  margin-bottom: 70px;
+.top-footer {
+  margin: 0 auto;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-hr {
-  width: 100%;
-}
-
-.container-mini-footer {
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   /* DEBUG */
-  background-color: #7fffd4;
-}
-
-.container-mini-footer > span,
-button {
-  padding: 6px;
-  /* DEBUG */
-  border: 1px solid #000000;
-}
-
-.container-footer-width {
-  width: 75%;
-  /* DEBUG */
-  border: 1px solid #fff;
-}
-/* FOOTER */
-
-/* Global Classes */
-
-/* Container Sizes */
-.container-standard-width {
-  flex-basis: 75%;
-}
-
-.container-xl-height {
   height: 800px;
 }
 
-/* Subcontainer Sizes */
-.subcontainer-standard {
-  height: 600px;
-  flex-basis: 50%;
-  /* DEBUG */
-  background-color: #1e90ff;
-  border: 1px solid #000000;
+footer > hr {
+  width: 100%;
 }
 
-.subcontainer-m {
-  height: 600px;
-  flex-basis: 25%;
+.bottom-footer {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   /* DEBUG */
-  background-color: #ffc0ca;
-  border: 1px solid #000000;
+  height: 110px;
+  background-color: #7fffd0;
 }
 
-.subcontainer-s {
+.logo-footer {
+  padding: 0 7px;
+  /* DEBUG */
+  background-color: #febac2;
+}
+
+.button-footer {
+  padding: 0 7px;
+  /* DEBUG */
+  background-color: #febac2;
+}
+
+
+/* GENERIC CLASSES */
+/* CONTAINER SECTION */
+.container-section {
   height: 100%;
+  flex-basis: 50%;
+  display: flex;
+}
+
+.container-section-XXL {
+  flex-basis: 100%;
+  height: 100%;
+  /* DEBUG */
+  background-color: #218b21;
+}
+
+.container-footer-S {
   flex-basis: 40%;
+  height: 100%;
   /* DEBUG */
   background-color: #f08180;
 }
 
-.subcontainer-xs {
-  flex-basis: 15%;
+.container-footer-XS {
+  flex-basis: 20%;
   height: 100%;
   /* DEBUG */
   background-color: #20b3aa;
-  border: 1px solid #000000;
 }
 
-/* Colors */
+/* SUB-CONTAINER SECTION */
+.sub-container-L {
+  height: 100%;
+  flex-basis: 60%;
+  /* DEBUG */
+  background-color: #1e90ff;
+}
+
+.sub-container-M {
+  height: 100%;
+  flex-basis: 40%;
+  /* DEBUG */
+  background-color: #ffc0ca;
+}
+
+/* DEBUG&MORE */
+.border-debug {
+  border: 2px dotted #000000;
+}
+
 .grey {
   background-color: #d3d3d3;
-}
-
-.pink {
-  background-color: #feb4c6;
 }
